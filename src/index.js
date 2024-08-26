@@ -15,11 +15,11 @@ window.addEventListener("mouseover", (hovered) => {
 
 window.addEventListener("click", (clicked) => {
     if (clicked.target.id === "angel") {
-        alert("I'll be there for you when your wings break.");
+        alert("Virtual Angel - Credit to ARTMS");
     }
     else if (clicked.target.id === "liminalForest") {
-        const userName = prompt("Your name is: ");
-        console.log(userName);
+        window.open('./forestOfBeginnings.html', '_blank').focus();
+        // window.location.href = './forestOfBeginnings.html'
     }
     else {
         console.log(clicked.target.id);

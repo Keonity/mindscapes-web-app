@@ -2,17 +2,29 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        forestOfBeginnings: './src/forestOfBeginnings.js',
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Mindscapes Catalogue',
             template: './src/index.html',
+            filename: 'index.html',
+            chunks: ['index'],
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Forest Of Beginnings',
+            template: './src/forestOfBeginnings.html',
+            filename: 'forestOfBeginnings.html',
+            chunks: ['forestOfBeginnings'],
             inject: 'body',
         }),
     ],
     mode: 'development',
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
