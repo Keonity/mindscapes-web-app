@@ -13,6 +13,11 @@ window.addEventListener("mouseover", (hovered) => {
         body.setAttribute("id", "liminalForestBg");
         
     }
+    else if (hovered.target.id === 'angel') {
+        beat.pause();
+        beat.currentTime = 0;
+        body.setAttribute("id", "hyesoliaBg");
+    }
     else {
         beat.pause();
         beat.currentTime = 0;
