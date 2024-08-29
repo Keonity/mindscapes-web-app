@@ -47,7 +47,7 @@
 
 }
 
-body {
+#body {
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -55,7 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'quicksandregular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'quicksandregular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 1s;
 }
 
 p {
@@ -104,4 +105,16 @@ g:hover text {
 #liminalForest + text {
     transform: translate(25px, 35px);
     scale: 200%;
+}
+
+#liminalForestBg {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'quicksandregular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #423e7e;
+    transition: all 1s;
 }

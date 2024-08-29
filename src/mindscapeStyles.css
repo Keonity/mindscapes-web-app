@@ -48,4 +48,35 @@ img {
     align-items: center;
     width: 50%;
     height: auto;
+    padding-bottom: 5rem;
+}
+
+#hyesoliaBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/dall.jpeg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#hyesoliaStoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(54, 0, 51, 0.623);
+}
+#hyesoliaStoryContainer p {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2.5rem;
 }

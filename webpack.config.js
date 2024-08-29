@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         forestOfBeginnings: './src/forestOfBeginnings.js',
+        hyesolia: './src/hyesolia.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -12,6 +13,13 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
             chunks: ['index'],
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Hyesolia',
+            template: './src/hyesolia.html',
+            filename: 'hyesolia.html',
+            chunks: ['hyesolia'],
             inject: 'body',
         }),
         new HtmlWebpackPlugin({
