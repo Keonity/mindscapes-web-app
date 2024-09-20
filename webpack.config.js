@@ -6,6 +6,7 @@ module.exports = {
         index: './src/index.js',
         forestOfBeginnings: './src/forestOfBeginnings.js',
         hyesolia: './src/hyesolia.js',
+        oonebi: './src/oonebi.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -27,6 +28,13 @@ module.exports = {
             template: './src/forestOfBeginnings.html',
             filename: 'forestOfBeginnings.html',
             chunks: ['forestOfBeginnings'],
+            inject: 'body',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Oonebi',
+            template: './src/oonebi.html',
+            filename: 'oonebi.html',
+            chunks: ['oonebi'],
             inject: 'body',
         }),
     ],

@@ -80,3 +80,33 @@ img {
     padding-right: 5rem;
     padding-bottom: 2.5rem;
 }
+
+#oonebiBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/liminalPrairie.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#oonebiStoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(139, 238, 255, 0.623);
+}
+#oonebiStoryContainer p {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2.5rem;
+}
