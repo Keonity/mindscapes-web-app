@@ -89,32 +89,32 @@ g:hover text {
 
 #angel {
     transform: translate(35%, 0%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #liminalForest {
     transform: translate(25%, 30%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #oonebi {
     transform: translate(-10%, 0%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #angel + text {
     transform: translate(37.5%, 12.5%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #liminalForest + text {
     transform: translate(15%, 45%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #oonebi + text {
     transform: translate(-7.5%, 12.5%);
-    scale: 200%;
+    scale: 150%;
 }
 
 #liminalForestBg {
